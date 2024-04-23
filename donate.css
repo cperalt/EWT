@@ -1,4 +1,20 @@
+#woman-picture {
+    width: 62.5rem;
+    height: 34.563rem;
+}
+
 .content_statement {
     font-size: 2.6rem;
     background-color: #79cbb8;
 }
+
+.section_form {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
