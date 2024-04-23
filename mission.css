@@ -1,0 +1,29 @@
+body {
+    background: linear-gradient(to right, pink, darkgray);
+    place-items: center;
+  }
+  
+  .footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    }
+    
+    .links {
+      flex: 33.33%;
+      padding: 5px;
+      font-family: 'Yuji Boku', serif;
+      text-align: center;
+      color: beige;
+    }
+  
+    .title {
+      text-align: center;
+      font-family: 'Yuji Boku', serif;
+      color: beige;
+    }
+
+    .images {
+        width: 20%;
+    }
+  
