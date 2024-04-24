@@ -3,12 +3,13 @@ body {
     place-items: center;
   }
   
-  .footer {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    }
-    
+    .footer {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        }
+  
+
     .links {
       flex: 33.33%;
       padding: 5px;
@@ -26,4 +27,71 @@ body {
     .images {
         width: 20%;
     }
+
+    .handshake {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      height: 50%;
+      border: 1rem;
+      border-radius: 15%;
+      border-style: groove;
+      border-color: blueviolet;
+      margin-top: 5%;
+      margin-bottom: 10%;
+    }
+
+    .girl-code {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 25%;
+      height: 25%;
+      border: 1rem;
+      border-style: groove;
+      border-color: greenyellow;
+      margin-top: 10%;
+      margin-bottom: 5%;
+      background: beige;
+    }
+
+    .g-c {
+      background: linear-gradient(to right, blueviolet, darkgray);
+      text-align: center;
+      font-family: 'Yuji Boku', serif;
+      color: beige;
+    }
+
+    .code-odd {
+      background: linear-gradient(to right, greenyellow, darkgreen);
+      text-align: center;
+      font-family: 'Yuji Boku', serif;
+      color: white;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+      height: 10%;
+      border: 0.5rem;
+      border-radius: 15%;
+      border-style: 
+      border-color: blueviolet;
+      opacity: 75%;
+    }
+
+    .title-purple {
+      text-align: center;
+      font-family: 'Yuji Boku', serif;
+      color: blueviolet;
+    }
+    }
+    
+      @media screen and (max-width: 1500px) {
+        .column {
+          width: 50%;
+        }
+    
+      }
+
   
