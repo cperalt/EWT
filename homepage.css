@@ -1,0 +1,89 @@
+.container {
+    background-color: blueviolet;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+}
+
+.statistic {
+    margin: 40px;
+    padding: 46px;
+}
+
+
+.header {
+    background: URL("EWT\ image.webp") no-repeat center;
+    height: 70vh;
+    width: 100vw;
+    background-size: cover;
+    
+}
+h1 {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    font-size: 70px;
+    font-style:oblique;
+    color: white;
+}
+.core-values {
+    text-align: center;
+    font-style:oblique;
+    font-size: 30px;
+    margin: auto;
+    border: 30px solid black; /* Adjust the width and color as needed */
+    padding: 100px; /
+}
+.container2 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.statistics {
+    width: 400px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    background-color: blueviolet;
+}
+
+.stat-box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.stat-box h3 {
+    margin-top: 0;
+}
+
+.stat-box p {
+    margin-bottom: 0;
+}
+.CV {
+    text-align: center;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+
+
+
+<section class="container">
+<section class="statistic">
+    <h3>Statistic 1</h3>
+    <p>Info</p>
+</section>
+<section class="statistic">
+    <h3>Statistic 2</h3>
+    <p>info</p>
+</section>
+<section class="statistic">
+    <h3>Statistic 3</h3>
+    <p>info</p>
