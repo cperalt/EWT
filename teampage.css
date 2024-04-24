@@ -1,46 +1,61 @@
-
 body{
-   display: flex;
-    align-items: center; 
-    justify-content: center;
-    width: 1400px;
-    margin: 0 0 0 0;
-    height: 1100px;
-}
-
-.bio-images{
-    display: flex;
-    justify-content: center;
-    background-color: aqua;
-    width: 100vw;
-    height: 100vh;
-}
-
-
-
-
-
-
-.team-content{
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1;
-    width: 1100px;
-    height: 800px;
-    top: 200px;
-    /* margin: 0 0 0 0;
-    padding: 0 0 0 0; */
-    /* justify-content: space-evenly; */
-  
-}
-
-.photos{
-    width: 220px ;
-    height: 140px;
+    background: linear-gradient(to right, pink, darkgray);
     
 }
 
-.makayla{
-    margin-right: 0;
+.body-content{
+   display: flex;
+     align-items: center; 
+    justify-content: center; 
+    height: 100vh;
+    color: aliceblue;
+     
+} 
+
+.team-header{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+   top: 15px;
+    text-align: center;
+    font-style: oblique ;
+   
 }
+
+.team-content{
+    position: relative;
+    display: flex;
+    height: 800px;
+    margin: 0;
+}
+
+
+.bio-images img {
+    display: block;
+    width: 360px ;
+    height: 280px;
+    border: 32px solid #e3b8f0;
+    border-radius: 10px ;
+    
+
+}
+
+
+.team-content > .bio-images:nth-child(odd){
+    margin-top: 35px;
+}
+
+.team-content > .bio-images:nth-child(even){
+    margin-top: 400px;
+}
+
+.bio-images {
+    text-align: center; 
+}
+
+hr{
+    border-top: 4px solid rgb(178, 50, 137);
+    border-radius: 5px;
+    margin-left: 300px;
+    margin-right: 300px;
+    
+  }
