@@ -1,8 +1,6 @@
 main {
     width: 100%;
-    height: 100vh;
     background: linear-gradient(to right, pink, darkgray);
-    opacity: .9;
 }
 
 .content_statement {
@@ -17,34 +15,44 @@ main {
     font-size: 3rem;
     font-weight: 900;
     color: #ffffff;
+    margin-bottom: 3rem;
 }
 
 #content_statement_desc {
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: 500;
+    text-align: center;
 }
 
 .donate_div {
     width: 100%;
-    background-color: red;
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
+    padding: 5rem 0;
 }
 
 .section_square {
-    background-color: blue;
-    width: 24rem;
+    background-color: #FFFFFF;
+    width: 34rem;
     display: flex;
     flex-direction: column;
     text-align: center;
-    border: 5px solid black;
     padding: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 4px 4px 12px #00000014;
+
+}
+
+hr {
+    margin: 2rem 0;
 }
 
 #section-title {
     font-size: 20px;
     padding-bottom: 1.5rem;
+    font-weight: 900;
+    color: #113529;
+    font-family: Montserrat;
 }
 
 .section_btns {
@@ -55,17 +63,18 @@ main {
 .donate-frequency {
     box-shadow: inset 0 0 2px #337136;
     line-height: 24px;
-    height: 40px;
+    height: 3.8rem;
     width: 120px;
-    background: green;
+    background: #EDF2F7;
     font-size: 20px;
+    border: 2px solid black;
+    border-radius: 9px;
 }
 
 .btn_donations {
-    background: yellow;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-left: 2.5rem;
+    grid-column-gap: 2rem;
 }
 
 .btn_donations-amt {
@@ -73,34 +82,130 @@ main {
     width: 0;
 }
 
-.btn_donations-amt:checked + label {
-    background-color: pink;
-}
-
 .amount_label {
     display: flex;
     align-items: center;
     justify-content: center;
     border: 2px solid black;
-    height: 3rem;
-    width: 75%;
+    height: 3.8rem;
+    width: 100%;
     font-size: 20px;
-    border-radius: 7px;
+    border-radius: 9px;
+    background-color: #EDF2F7;
+    font-family: Montserrat;
 }
 
-.amount_label:checked {
-    background-color: pink;
+
+.amount_label:hover {
+    background-color: #113259;
+    color: #FFFFFF;
 }
 
 #other-amount {
+    height: 3.8rem;
+    margin-top: 1.5rem;
+    font-size: 20px;
+    border-radius: 9px;
+    background-color: #113259;
+    color: #FFFFFF;
+}
+
+.button-next {
+    margin-bottom: 1rem;
+    font-size: 20px;
+    margin-top: 1.5rem;
     height: 3rem;
-    margin-top: 1.5rem;
-    font-size: 20px;
+    border-radius: 9999px;
+    background: #de582a;
+    font-family: Montserrat;
+    color: #ffffff;
+    font-weight: 900;
 }
 
-#button-next {
+.section_square-2 {
+    width: 34rem;
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
     font-size: 20px;
-    margin-top: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 4px 4px 12px #00000014;
 }
 
+.section_square-2 > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
 
+#full-name-label {
+    font-size: 20px;
+    margin-right: 1rem;
+    font-weight: 600;
+    color: #113529;
+    font-family: Montserrat;
+}
+
+.contact_label {
+    font-weight: 600;
+    color: #113529;
+    font-family: Montserrat;
+}
+
+#first-name, #last-name {
+    height: 3rem;
+    width: 9rem;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+.section_square2-inputs {
+    height: 3rem;
+    font-size: 20px;
+    width: 19rem;
+    border: 2px solid black;
+}
+
+input {
+    text-align: center;
+    border-radius: 9px;
+    background-color: #EDF2F7;
+
+}
+
+.section_square-3 {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 1.5rem;
+    width: 34rem;
+    font-weight: 600;
+    color: #113529;
+    font-family: Montserrat;
+    box-shadow: 4px 4px 12px #00000014;
+    border-radius: .5rem;
+}
+
+.section_square-3 > h1 {
+    text-align: center;
+}
+
+.section_square-3 > div {
+    margin: 2.5rem 0;
+}
+
+.section_square3-inputs {
+    height: 2.5rem;
+    font-size: 20px;
+    width: 100%;
+    font-family: Roboto, arial, sans-serif;
+}
+
+.expDate {
+    height: 2.5rem;
+    font-size: 20px;
+    width: 12rem;
+    text-align: center;
+}
