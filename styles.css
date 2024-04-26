@@ -8,7 +8,11 @@
 html {
     font-size: 12px;
 
-    @media only screen and (min-width: 481px) {
+    @media only screen and (min-width: 481px) and (max-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
         font-size: 16px;
     }
 }
@@ -35,8 +39,9 @@ html {
     height: 100vh;
     list-style-type: none;
     color: #ffffff;
-    background-color: black;
+    background-color: #113259;
     z-index: 1;
+    padding-top: 5rem;
 
     @media only screen and (min-width: 481px) {
         display: flex;
@@ -45,6 +50,14 @@ html {
         width: auto;
         height: auto;
         background-color: inherit;
+        padding-top: 0;
+    }
+}
+
+.navbar_links > li {
+    padding: 3rem 0;
+    @media only screen and (min-width: 481px) {
+        padding: 0;
     }
 }
 
@@ -91,7 +104,8 @@ html {
 
 .footer {
     display: flex;
-    position: absolute;
+    position: relative;
+    bottom: 0;
     background-color: #816081;
 }  
 

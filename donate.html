@@ -19,8 +19,8 @@
             <ul class="navbar_links">
                 <li><a class="navbar_links_link" href="index.html">Home</a></li>
                 <li><a class="navbar_links_link" href="mission.html">About</a></li>
-                <li><a class="navbar_links_link" href="teampage.html">Staff</a></li>
-                <li><a class="navbar_links_link" href="">Contact Us</a></li>
+                <li><a class="navbar_links_link" href="teampage.html">Team</a></li>
+                <li><a class="navbar_links_link" href="contact.html">Contact</a></li>
             </ul>
             <ul class="navbar_donate">
                 <li><a class="navbar_links_donate" href="donate.html">Donate</a></li>
@@ -61,7 +61,7 @@
                     </div>
                     <input type="text" inputmode="numeric" id="other-amount" value="100">
                     <hr>
-                    <button type="button" class="button-next">Next</button>
+                    <button type="button" class="button-next" id="first_next">Next</button>
                 </section>
                 <section class="section_square-2">
                     <div class="full-name">
@@ -75,10 +75,11 @@
                     </div>
                     <div>
                         <label for="phone" class="contact_label">Phone:</label>
-                        <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" class="section_square2-inputs" required  value="">
+                        <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" class="section_square2-inputs payment_number" required  value="">
                     </div>
                     <hr>
-                    <button type="button" class="button-next">Next Step</button>
+                    <button type="button" id="second_next" class="button-next">Next Step</button>
+                    <button type="button" id="first_previous" class="previous">Previous</button>
                 </section>
                 <section class="section_square-3">
                     <h1>Payment</h1>
@@ -88,7 +89,7 @@
                     </div>
                     <div>
                         <label for="cardNumber" class="payment_label">CARDNUMBER</label>
-                        <input type="text" id="cardNumber" name="cardNumber" class="section_square3-inputs" required placeholder="****-****-****-****" value="">
+                        <input type="tel" inputmode="numeric" id="cardNumber" name="cardNumber" class="section_square3-inputs payment_number" required placeholder="****-****-****-****" value="">
                     </div>
                     <div>
                         <label for="expDate" class="payment_label">EXPIRATION DATE</label>
@@ -140,11 +141,11 @@
                     </div>
                     <div>
                         <label for="security_code" class="payment_label">SECURITY CODE</label>
-                        <input type="text" id="security_code" name="cardHolder" class="section_square3-inputs" placeholder="SECURITY CODE" required  value="">
+                        <input type="tel" inputmode="numeric" id="security_code" name="cardHolder" class="section_square3-inputs payment_number" placeholder="SECURITY CODE" required  value="">
                     </div>
                     <div>
                         <label for="postal_code" class="payment_label">POSTAL CODE</label>
-                        <input type="text" id="postal_code" name="postal_code" class="section_square3-inputs" placeholder="POSTAL CODE" required  value="">
+                        <input type="tel" inputmode="numeric" id="postal_code" name="postal_code" class="section_square3-inputs payment_number" placeholder="POSTAL CODE" required  value="">
                     </div>
                     <div>
                         <label for="country" class="payment_label">COUNTRY</label>
@@ -402,7 +403,8 @@
                         </select>
                     </div>
                     <hr>
-                    <button type="button" class="button-next">Complete Donation</button>
+                    <button type="submit" class="button-next">Complete Donation</button>
+                    <button type="button" id="second_previous" class="previous">Previous</button>
                 </section>
             </form>
         </div>
