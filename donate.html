@@ -16,7 +16,7 @@
             <ul class="navbar_links">
                 <li><a class="navbar_links_link" href="index.html">Home</a></li>
                 <li><a class="navbar_links_link" href="mission.html">About</a></li>
-                <li><a class="navbar_links_link" href="">Staff</a></li>
+                <li><a class="navbar_links_link" href="teampage.html">Staff</a></li>
                 <li><a class="navbar_links_link" href="">Contact Us</a></li>
             </ul>
             <ul class="navbar_donate">
@@ -27,36 +27,36 @@
     </header> 
     <main>
         <section class="content_statement">
-            <h1 id="content_statement_heading">MAKE A DONATION!</h4>
+            <h1 id="content_statement_heading">MAKE A DONATION!</h1>
             <p id="content_statement_desc">Your contribution can change lives! By donating to Women in Tech Global, you’re directly supporting our mission to close the gender gap and empower women and girls in technology worldwide.</p>
         </section>
         <div class="donate_div">
             <section class="section_square">
-                <h3>JOIN #EWT</h3>
+                <h3 id="section-title">JOIN #EWT</h3>
                 <div class="section_btns">
-                    <button type="button">Give Once</button>
-                    <button type="button">Monthly</button>
+                    <button type="button" class="donate-frequency">Give Once</button>
+                    <button type="button" class="donate-frequency">Monthly</button>
                 </div>
                 <div class="btn_donations">
                     <div class="btn_donations_amt_div">
-                        <input type="radio" name="amount" class="btn_donations-amt" id="amount1">
+                        <input type="radio" name="amount" class="btn_donations-amt" id="amount1" value="25">
                         <label for="amount1" class="amount_label">$25</label>
                     </div>
                     <div class="btn_donations_amt_div">
-                        <input type="radio" name="amount" class="btn_donations-amt" id="amount2">
+                        <input type="radio" name="amount" class="btn_donations-amt" id="amount2" value="50">
                         <label for="amount2" class="amount_label">$50</label>
                     </div>
                     <div class="btn_donations_amt_div">
-                        <input type="radio" name="amount" class="btn_donations-amt" id="amount3">
-                        <label for="amount1" class="amount_label">$75</label>
+                        <input type="radio" name="amount" class="btn_donations-amt" id="amount3" value="75">
+                        <label for="amount3" class="amount_label">$75</label>
                     </div>
                     <div class="btn_donations_amt_div">
-                        <input type="radio" name="amount" class="btn_donations-amt" id="amount4">
-                        <label for="amount1" class="amount_label">$100</label>
+                        <input type="radio" name="amount" class="btn_donations-amt" id="amount4" value="100" checked>
+                        <label for="amount4" class="amount_label">$100</label>
                     </div>
                 </div>
-                <input type="number">
-                <button type="button">Next</button>
+                <input type="text" inputmode="numeric" id="other-amount">
+                <button type="button" id="button-next">Next</button>
             </section>
         </div>
     </main>
