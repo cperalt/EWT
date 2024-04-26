@@ -89,3 +89,20 @@ html {
     }
 }
 
+.footer {
+    display: flex;
+    position: absolute;
+    background-color: #816081;
+}  
+
+.links {
+  flex: 33.33%;
+  padding: 5px;
+  font-style: oblique;
+  text-align: center;
+  color: white;
+}
+
+.images {
+    width: 30%;
+}
