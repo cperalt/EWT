@@ -2,163 +2,215 @@ body {
     background: linear-gradient(to right, pink, darkgray);
     place-items: center;
   }
+
+  .header-title {
+    color: white;
+    font-style: oblique;
+    text-align: center;
+    padding-top: 15rem;
+    font-size: 3.25rem;
+    opacity: 75%;
+  }
+  .header-para {
+    color: white;
+    font-style: oblique;
+    text-align: right;
+    margin-right: 9rem;
+    font-size: 1rem;
+    opacity: 80%;
+  }
+
+@media only screen and (max-width: 700px) {
+  .header-title {
+    font-size: 1.25rem;
+  }
+}
+
+.image {
+  background: URL("images/EWT\ About\ Hero\ Image\ \(2\).png") no-repeat center;
+  height: 70vh;
+  width: 100vw;
+  background-size: cover;
+  color: white;
+  font-style: oblique;
+  text-align: center;
+  font-size: 3.25rem;
+}
+
+.vision-image {
+  height: 40%;
+  width: 50%;
+  margin-left: 25%;
+  border: 0;
+  border-radius: 10%;
+}
+
+.vision-titles {
+  font-size: 2.5rem;
+  color: blueviolet;
+  text-align: left;
+  margin-left: 4rem;
+  font-style: oblique;
+  opacity: 70%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.para-titles-odd {
+  color: blueviolet;
+}
+
+.para-titles-even {
+  color: yellowgreen;
+}
+
+.vision-para {
+  padding-top: .5rem;
+  padding-bottom: 1.5rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-style: oblique;
+  color: white;
+  font-size: 1.25rem;
+  opacity: 70%;
+}
+
+.core-title {
+  text-align: center;
+  font-style: oblique;
+  color: white;
+  margin-top: 5%;
+  font-size: 4rem;
+  opacity: 70%;
+}
+.gc-title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 95%;
+  background: beige;
+  opacity: 70%;
+}
+
+.title-purple {
+  text-align: center;
+  font-style: oblique;
+  color: blueviolet;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  font-size: 2rem;
+  text-decoration: underline;
+  opacity: 75%;
+}
+
+.title-green {
+  text-align: center;
+  font-style: oblique;
+  color: darkgreen;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  font-size: 2rem;
+  text-decoration: underline;
+  opacity: 75%;
+}
+
+.g-c {
+  background: linear-gradient(to right, blueviolet, darkgray);
+  text-align: center;
+  font-style: oblique;
+  color: white;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.core-odd {
+  background: linear-gradient(to right, darkgreen, greenyellow);
+  text-align: center;
+  font-style: oblique;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: 10%;
+  border: .25rem;
+  border-style: solid;
+  border-color: blueviolet;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  opacity: 80%;
+}
+
+.core-even {
+  background: linear-gradient(to right, blueviolet, darkgray);
+  text-align: center;
+  font-style: oblique;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: 10%;
+  border: .25rem;
+  border-style: solid;
+  border-color: yellowgreen;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  opacity: 80%;
+}
+
+.para {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.footer {
+  display: flex;
+  position: absolute;
+  background-color: #816081;
+  margin-bottom: 10%;
+}
   
-    .footer {
-        display: flex;
-        position: absolute;
-        background-color: #816081;
-        }
+
+.links {
+  flex: 33.33%;
+  padding: 5px;
+  font-style: oblique;
+  text-align: center;
+  color: white;
+}
+
+.images {
+  width: 30%;
+}
+
+.copyright {
+  font-size: .75rem;
+  font-style: oblique;
+  color: white;
+}
+
+   
+    
+
+   
+
   
 
-    .links {
-      flex: 33.33%;
-      padding: 5px;
-      font-style: oblique;
-      text-align: center;
-      color: white;
-    }
-  
-    .title {
-      text-align: center;
-      font-style: oblique;
-      color: white;
-      margin-top: 5%;
-      font-size: 4rem;
-      opacity: 85%;
-    }
-
-    .images {
-        width: 30%;
-    }
-
-    .handshake {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-      height: 50%;
-      border: .25rem;
-      border-radius: 10%;
-      border-style: groove;
-      border-color: blueviolet;
-      margin-top: 5%;
-      margin-bottom: 10%;
-    }
-
-    .girl-code {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 5%;
-      margin-bottom: 5%;
-      width: 95%;
-      background: beige;
-      opacity: 85%;
-    }
-
-    .g-c {
-      background: linear-gradient(to right, blueviolet, darkgray);
-      text-align: center;
-      font-style: oblique;
-      color: white;
-      width: 100%;
-      font-size: 1.5rem;
-    }
-
-    .code-odd {
-      background: linear-gradient(to right, darkgreen, greenyellow);
-      text-align: center;
-      font-style: oblique;
-      color: white;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-      height: 10%;
-      border: .25rem;
-      border-style: solid;
-      border-color: blueviolet;
-      border-radius: 1rem;
-      font-size: 1.5rem;
-    }
-
-    .code-even {
-      background: linear-gradient(to right, blueviolet, darkgray);
-      text-align: center;
-      font-style: oblique;
-      color: white;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-      height: 10%;
-      border: .25rem;
-      border-style: solid;
-      border-color: yellowgreen;
-      border-radius: 1rem;
-      font-size: 1.5rem;
-    }
-
-    .title-purple {
-      text-align: center;
-      font-style: oblique;
-      color: blueviolet;
-      padding-top: 2.5%;
-      padding-bottom: 2.5%;
-      font-size: 2rem;
-      text-decoration: underline;
-      opacity: 75%;
-    }
-
-    .title-green {
-      text-align: center;
-      font-style: oblique;
-      color: darkgreen;
-      padding-top: 2.5%;
-      padding-bottom: 2.5%;
-      font-size: 2rem;
-      text-decoration: underline;
-      opacity: 75%;
-    }
-
-    .para {
-      padding-top: 5%;
-      padding-bottom: 5%;
-      margin-left: 5%;
-      margin-right: 5%;
-    }
+   
     
     
-      @media screen and (max-width: 1500px) {
-        .column {
-          width: 50%;
-        }
-    
-      }
+     
 
-      .about-hero {
-        width: 100%;
-      }
+     
 
-      .copyright {
-        font-size: .75rem;
-        font-style: oblique;
-        color: white;
-      }
+      
+      
 
-      .container {
-        position: relative;
-        color: white;
-        font-size: 70px;
-        font-style: oblique;
-      }
-
-      .centered {
-        position: absolute;
-        top: 50%;
-        left: 14.5rem;
-        transform: translate(-50%, -50%);
-        opacity: 80%;
-      }
+     
 
   
