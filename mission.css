@@ -5,27 +5,30 @@ body {
   
     .footer {
         display: flex;
-        position: fixed;
-        bottom: 0;
+        position: absolute;
+        background-color: #816081;
         }
   
 
     .links {
       flex: 33.33%;
       padding: 5px;
-      font-family: 'Yuji Boku', serif;
+      font-style: oblique;
       text-align: center;
-      color: beige;
+      color: white;
     }
   
     .title {
       text-align: center;
-      font-family: 'Yuji Boku', serif;
-      color: beige;
+      font-style: oblique;
+      color: white;
+      margin-top: 5%;
+      font-size: 4rem;
+      opacity: 85%;
     }
 
     .images {
-        width: 20%;
+        width: 30%;
     }
 
     .handshake {
@@ -34,8 +37,8 @@ body {
       margin-right: auto;
       width: 50%;
       height: 50%;
-      border: 1rem;
-      border-radius: 15%;
+      border: .25rem;
+      border-radius: 10%;
       border-style: groove;
       border-color: blueviolet;
       margin-top: 5%;
@@ -46,52 +49,116 @@ body {
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 25%;
-      height: 25%;
-      border: 1rem;
-      border-style: groove;
-      border-color: greenyellow;
-      margin-top: 10%;
+      margin-top: 5%;
       margin-bottom: 5%;
+      width: 95%;
       background: beige;
+      opacity: 85%;
     }
 
     .g-c {
       background: linear-gradient(to right, blueviolet, darkgray);
       text-align: center;
-      font-family: 'Yuji Boku', serif;
-      color: beige;
+      font-style: oblique;
+      color: white;
+      width: 100%;
+      font-size: 1.5rem;
     }
 
     .code-odd {
-      background: linear-gradient(to right, greenyellow, darkgreen);
+      background: linear-gradient(to right, darkgreen, greenyellow);
       text-align: center;
-      font-family: 'Yuji Boku', serif;
+      font-style: oblique;
       color: white;
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 75%;
+      width: 50%;
       height: 10%;
-      border: 0.5rem;
-      border-radius: 15%;
-      border-style: 
+      border: .25rem;
+      border-style: solid;
       border-color: blueviolet;
-      opacity: 75%;
+      border-radius: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .code-even {
+      background: linear-gradient(to right, blueviolet, darkgray);
+      text-align: center;
+      font-style: oblique;
+      color: white;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      height: 10%;
+      border: .25rem;
+      border-style: solid;
+      border-color: yellowgreen;
+      border-radius: 1rem;
+      font-size: 1.5rem;
     }
 
     .title-purple {
       text-align: center;
-      font-family: 'Yuji Boku', serif;
+      font-style: oblique;
       color: blueviolet;
+      padding-top: 2.5%;
+      padding-bottom: 2.5%;
+      font-size: 2rem;
+      text-decoration: underline;
+      opacity: 75%;
     }
+
+    .title-green {
+      text-align: center;
+      font-style: oblique;
+      color: darkgreen;
+      padding-top: 2.5%;
+      padding-bottom: 2.5%;
+      font-size: 2rem;
+      text-decoration: underline;
+      opacity: 75%;
     }
+
+    .para {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    
     
       @media screen and (max-width: 1500px) {
         .column {
           width: 50%;
         }
     
+      }
+
+      .about-hero {
+        width: 100%;
+      }
+
+      .copyright {
+        font-size: .75rem;
+        font-style: oblique;
+        color: white;
+      }
+
+      .container {
+        position: relative;
+        color: white;
+        font-size: 70px;
+        font-style: oblique;
+      }
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 14.5rem;
+        transform: translate(-50%, -50%);
+        opacity: 80%;
       }
 
   
