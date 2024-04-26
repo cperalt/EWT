@@ -35,7 +35,7 @@ body {
 .join p{
     position: relative;
     top: 5.625rem;
-    flex-direction: column;
+
 }
 
 
@@ -103,6 +103,8 @@ hr{
 .partner-heading{
    bottom: 7.5rem;
    text-align: center;
+   color:rgb(146, 68, 176); 
+   
 }
 
 
@@ -113,8 +115,9 @@ hr{
     display: flex;
     height: 18.75rem;
     color:rgb(146, 68, 176); 
-    bottom: 0px;
-    text-align: center;
+    justify-content: center;
+   
+    
   }
 
   .Partners img{
@@ -132,6 +135,5 @@ hr{
 }
 
 .tech-info{
-    width: 20rem;
-    justify-content: center;
-}
+    width: 40rem;
+}**
