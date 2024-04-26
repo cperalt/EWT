@@ -73,13 +73,12 @@ body {
 
 .bio-images img {
     display: block;
-    width: 22.5rem ;
-    height: 17.5rem;
+    width: 100% ;
     border: 2rem solid #e3b8f0;
     border-radius: .625rem ;
 }
 
-
+/* used to stagger photos */
 .team-content > .bio-images:nth-child(odd){
     margin-top: .938rem;
 } 
@@ -138,7 +137,36 @@ hr{
 }
 
 .tech-info{
-    width: 37rem;
+  
     text-align: center;
 }
 
+.partner-column{
+    width: 30%;
+    height: fit-content;
+    
+}
+
+.footer{
+    margin-top: 10vh;
+}
+
+
+@media (max-width: 1024px) {
+    .team-content {
+        flex-direction: column;
+        display: flex;
+       height: fit-content;
+    } 
+    .team-content > .bio-images:nth-child(even) {
+         margin-top: 0; 
+    }
+
+    .bio-images{
+        margin: 20px;
+    }
+
+    .join{
+        margin-top: 100px;
+    }
+}
