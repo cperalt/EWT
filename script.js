@@ -18,3 +18,15 @@ menu.addEventListener("click", () => {
 
 });
 
+
+
+const otherAmount = document.querySelector("#other-amount");
+const radioButtons = document.querySelectorAll(".btn_donations-amt");
+
+// For each radio button add an event listener that upon click changes the other amount input value
+radioButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+            otherAmount.value =  btn.value;
+        
+        })
+});

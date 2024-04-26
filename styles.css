@@ -35,6 +35,8 @@ html {
     height: 100vh;
     list-style-type: none;
     color: #ffffff;
+    background-color: black;
+    z-index: 1;
 
     @media only screen and (min-width: 481px) {
         display: flex;

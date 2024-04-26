@@ -1,7 +1,8 @@
 main {
     width: 100%;
     height: 100vh;
-    background-image: url('./images/WIT.jpeg');
+    background: linear-gradient(to right, pink, darkgray);
+    opacity: .9;
 }
 
 .content_statement {
@@ -36,10 +37,35 @@ main {
     width: 24rem;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    border: 5px solid black;
+    padding: 1.5rem;
 }
 
-.btn_donations_amt_div {
-    background-color: pink;
+#section-title {
+    font-size: 20px;
+    padding-bottom: 1.5rem;
+}
+
+.section_btns {
+    display: flex;
+    justify-content: center;
+}
+
+.donate-frequency {
+    box-shadow: inset 0 0 2px #337136;
+    line-height: 24px;
+    height: 40px;
+    width: 120px;
+    background: green;
+    font-size: 20px;
+}
+
+.btn_donations {
+    background: yellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 2.5rem;
 }
 
 .btn_donations-amt {
@@ -47,8 +73,8 @@ main {
     width: 0;
 }
 
-.btn_donations_amt:checked + .amount_label {
-    background-color: green;
+.btn_donations-amt:checked + label {
+    background-color: pink;
 }
 
 .amount_label {
@@ -56,9 +82,25 @@ main {
     align-items: center;
     justify-content: center;
     border: 2px solid black;
-    height: 2.5rem;
-    width: 5rem;
+    height: 3rem;
+    width: 75%;
+    font-size: 20px;
+    border-radius: 7px;
 }
 
+.amount_label:checked {
+    background-color: pink;
+}
+
+#other-amount {
+    height: 3rem;
+    margin-top: 1.5rem;
+    font-size: 20px;
+}
+
+#button-next {
+    font-size: 20px;
+    margin-top: 1.5rem;
+}
 
 
