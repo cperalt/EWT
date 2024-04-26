@@ -1,51 +1,91 @@
-body{
-    background: linear-gradient(to right, pink, darkgray);
-    
+body {
+    background: linear-gradient(to right, pink, rgb(192, 167, 198));
 }
+
 
 .body-content{
    display: flex;
      align-items: center; 
     justify-content: center; 
     height: 100vh;
-    color: aliceblue;
+    color: rgb(146, 68, 176);
      
 } 
 
-.team-header{
+.join{
+
+    background:url(purple.png);
+    background-size: cover;
+    position: relative;
+    width: auto;
+    height: 18.75rem;
+    bottom: 7.5rem;
+    text-align: center;
+    color: aliceblue;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.join h2{
+    position: relative;
+    font-style: oblique ;
+    top: 5rem;
+}
+
+.join p{
+    position: relative;
+    top: 5.625rem;
+    flex-direction: column;
+}
+
+
+
+#team-button{
+    border-radius: .313rem;
+    position: relative;
+    border: 0;
+    cursor: pointer;
+    font-style: oblique;
+    background-color: rgb(41, 6, 44);
     color: rgb(255, 255, 255);
-    font-size: 50px;
-   top: 15px;
+    height: 1.875rem;
+    width: 4.375rem;
+    font-weight: bold;
+    top: 6.875rem;
+}
+
+
+.team-header{
+    color: rgb(146, 68, 176);
+    font-size: 3.125rem;
+   top: 0.938rem;
     text-align: center;
     font-style: oblique ;
-   
 }
 
 .team-content{
     position: relative;
     display: flex;
-    height: 800px;
+    height: 50rem;
     margin: 0;
 }
 
 
 .bio-images img {
     display: block;
-    width: 360px ;
-    height: 280px;
-    border: 32px solid #e3b8f0;
-    border-radius: 10px ;
-    
-
+    width: 22.5rem ;
+    height: 17.5rem;
+    border: 2rem solid #e3b8f0;
+    border-radius: .625rem ;
 }
 
 
 .team-content > .bio-images:nth-child(odd){
-    margin-top: 35px;
+    margin-top: .938rem;
 }
 
 .team-content > .bio-images:nth-child(even){
-    margin-top: 400px;
+    margin-top: 18.75rem;
 }
 
 .bio-images {
@@ -53,9 +93,45 @@ body{
 }
 
 hr{
-    border-top: 4px solid rgb(178, 50, 137);
+    border-top: .25rem solid rgb(178, 50, 137);
     border-radius: 5px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 18.75rem;
+    margin-right: 18.75rem;
     
   }
+
+.partner-heading{
+   bottom: 7.5rem;
+   text-align: center;
+}
+
+
+
+
+  .Partners{
+    position: relative;
+    display: flex;
+    height: 18.75rem;
+    color:rgb(146, 68, 176); 
+    bottom: 0px;
+    text-align: center;
+  }
+
+  .Partners img{
+    width: 5rem;
+    height: 5rem;
+    padding: top 3.125rem ; 
+  }
+
+  .bio-images img {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bio-images img:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.tech-info{
+    width: 20rem;
+    justify-content: center;
+}
