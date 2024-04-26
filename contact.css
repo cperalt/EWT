@@ -1,61 +1,90 @@
-
-body{
-    background: linear-gradient(to right, pink, darkgray);}
-
-
-
-.contact-info{
-   
+main {
+    background: linear-gradient(to right, pink, darkgray);
 }
 
-.form{ 
-    position: relative;
-    flex-direction: column;
-  align-items: center;
-  width: 90rem;
-  height: 30rem;
-  direction: row;
-  left: 12.5rem;
-  top: 6rem;
+h1 {
+    font-size: 3rem;
+    font-family: 'League Spartan';
+    padding: 2% 0;
+    text-align: center;
 }
-
-.contact-form{
-    background-color: aliceblue;
-    position: relative;
+.flex-container {
     display: flex;
-    width: 80rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2%;
+  
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'League Spartan';
+
+    @media (min-width: 768px) {
+        font-size: 2.5rem;
+    }
+}
+.contact-form {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    height: 40rem;
-  
 }
-
-input{
-    position: relative;
-    width: 30rem;
-    height: 3rem;
-    background-color: white;
-    margin-bottom: 20px;
-    padding: 1rem 1rem;
-    top: 2rem;
-  }
-
-  textarea{
-    position: relative;
-    top: 3rem;
-    width: 35rem;
-    height: 10rem;
-  }
-
-
-
-  button{
-    bottom: 0;
-  }
-
-  h2{
-    font-weight: 40px;
-    color: rgb(106, 22, 123);
-    font-size: 3rem;
-    margin-top: 1rem;
-  }
+.contact-form > p {
+    margin-bottom: 6%;
+    font-size: 1.5rem;
+    padding-left: 5%;
+}
+form {
+    margin: 1rem;
+    border: solid black 1rem;
+    border-radius: 5%;
+    padding: 2%;
+  
+    @media (min-width: 768px) {
+      width: 40vw;
+    }
+}
+fieldset {
+    border: none;
+}
+label {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+    font-size: 20px;
+    margin-right: 1rem;
+    font-weight: 600;
+    color: #113529;
+    font-family: Montserrat;
+    font-family: 'Roboto Slab';
+}
+input, textarea, select {
+    width: 100%;
+    margin: 2% 0 0 0;
+    min-height: 2rem;
+    font-size: 1.3rem;
+    border: 2px solid black;
+    height: 3.8rem;
+    border-radius: 5%;
+}
+input[type="submit"] {
+    display: block;
+    width: 40%;
+    margin: .5rem auto .5rem auto;
+    height: 2rem;
+    border-radius: 10%;
+    font-size: 1.3rem;
+    border: 2px solid black;
+    height: 3.8rem;
+}
+input {
+    border-radius: 5%;
+    font-size: 20px;
+    border-radius: 9px;
+    background-color: #EDF2F7;
+}

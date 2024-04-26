@@ -36,3 +36,77 @@ radioButtons.forEach((btn) => {
         
         })
 });
+
+//targets the first next button
+const firstNext = document.querySelector("#first_next");
+
+//targets the second next button
+const secondNext = document.querySelector("#second_next");
+
+//targets the first section of the form
+const firstSection = document.querySelector(".section_square");
+
+//targets the second section of the form
+const secondSection = document.querySelector(".section_square-2");
+
+//targets the third section of the form
+const thirdSection = document.querySelector(".section_square-3");
+
+//Event listener to first next button that will show the next section and hide current
+firstNext.addEventListener("click", () => {
+    if (secondSection.style.display == "" ) {
+        secondSection.style.display = "flex";
+        firstSection.style.display = "none";
+    }
+});
+
+secondNext.addEventListener("click", () => {
+
+    if (thirdSection.style.display == "" ) {
+        thirdSection.style.display = "flex";
+        secondSection.style.display = "none";
+    }
+});
+
+//targets the first previous button
+const firstPrevious = document.querySelector("#first_previous");
+
+firstPrevious.addEventListener("click", () => {
+    if (secondSection.style.display == "flex" ) {
+        secondSection.style.display = "none";
+        firstSection.style.display = "flex";
+    }
+});
+
+//targets the second previous button
+const secondPrevious = document.querySelector("#second_previous");
+
+secondPrevious.addEventListener("click", () => {
+    if (thirdSection.style.display == "flex" ) {
+        thirdSection.style.display = "none";
+        secondSection.style.display = "flex";
+    }
+});
+
+const paymentNumbers = document.querySelectorAll(".payment_number");
+
+paymentNumbers.forEach((btn) => {
+    btn.addEventListener("keydown", () => {
+
+         // Regrex checks for non numerical characters, if no match it will return -1 which means all characters are numbers
+         // I set the condition to check if its not -1 meaning non numerical numbers were typed. I run an alert to notify
+         // the user to enter only numbers.
+        if ( event.key.search(/\D/g) != -1 && event.key !== "Backspace" && event.key !== "Enter") {
+            window.alert("PLEASE ENTER ONLY NUMBERS");
+
+            //prevents the key from being pressed/added to the cardnumber.value
+            event. preventDefault()
+
+        }
+    })
+});
+
+
+const cardNumber = document.querySelector("#cardnumber");
+
+console.log(cardNumber);
