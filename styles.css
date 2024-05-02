@@ -20,6 +20,9 @@ html {
 .navbar {
     display: flex;
     font-size: 2.5rem;
+    font-family: Montserrat;
+    font-weight: 900;
+    color: #113529;
     background-color: #816081;
     justify-content: space-between;
     align-items: center;
@@ -72,6 +75,7 @@ html {
 .navbar_title {
     padding-left: 2rem;
     color: #ffffff;
+    width: 13rem;
 }
 
 .navbar_links_link {
